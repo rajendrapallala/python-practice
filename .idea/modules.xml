@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/card-games/card-games.iml" filepath="$PROJECT_DIR$/card-games/card-games.iml" />
+      <module fileurl="file://$PROJECT_DIR$/python-practice.iml" filepath="$PROJECT_DIR$/python-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/python-practice/python-practice.iml" filepath="$PROJECT_DIR$/python-practice/python-practice.iml" />
     </modules>
   </component>
 </project>
