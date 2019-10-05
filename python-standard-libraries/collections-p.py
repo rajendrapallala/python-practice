@@ -4,6 +4,28 @@ from collections import namedtuple
 from collections import Counter
 from collections import deque
 
+def namedtup_example():
+    # Enter your code here. Read input from STDIN. Print output to STDOUT
+    nostds = 5
+    fields="ID         MARKS      NAME       CLASS"
+    cols=namedtuple("cols",",".join(fields.split()))
+    l = list()
+    s=0
+    vals="1          97         Raymond    7\n2          50         Steven     4\n3          91         Adrian     9\n4          72         Stewart    5\n5          80         Peter      6"
+    for line in vals.split('\n'):
+        a=cols(*line.split())
+        s += int(a.MARKS)
+    print(s/nostds)
+
+def ordereddict():
+    n = int(input())
+    d = OrderedDict()
+    for i in range(n):
+        key, val = input().rsplit(maxsplit=1)
+        d[key] = d.setdefault(key,0) + int(val)
+    for i1,i2 in d.items():
+        print(i1, i2)
+
 
 if __name__ == "__main__":
 
@@ -80,4 +102,4 @@ if __name__ == "__main__":
     d = Dog(att1=3, att2=4, att3=5)
     print(d.att1)
     print(d[0])
-
+    namedtup_example()

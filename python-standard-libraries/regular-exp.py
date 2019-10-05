@@ -17,7 +17,7 @@ regual expresions
 
   -- pattern defination chars
      [] represents set of chars, to match one of chars between [ and ]
-     | or , for matching pattern a or pattern b
+     | , or operator, for matching pattern a or pattern b i.e. separating alternatives
      () group identification and retrive this group using '\'group number
      (?:) non-capturing group
      ()? optional group
